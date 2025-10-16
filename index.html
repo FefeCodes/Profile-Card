@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <figure class="profile-avatar">
+        <img
+          src="./asset/Oluwaferanmi Aina.jpg"
+          alt="Profile photo of Aina Oluwaferanmi"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+      <section class="profile">
+        <section class="profile-info">
+          <header>
+            <h2 data-testid="test-user-name">Aina Oluwaferanmi Ayomikun</h2>
+          </header>
+
+          <p class="current-time">
+            Current time (ms):
+            <span data-testid="test-user-time" id="time"></span>
+          </p>
+
+          <p data-testid="test-user-bio" class="">
+            A creative UI/UX designer and frontend enthusiast passionate <br />
+            about building delightful digital experiences.
+          </p>
+        </section>
+
+        <section class="details">
+          <nav data-testid="test-user-social-links" aria-label="Social links">
+            <ul>
+              <li>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <section class="hobbies-dislikes-container">
+            <section>
+              <h3>Hobbies</h3>
+              <ul data-testid="test-user-hobbies">
+                <li>Designing interfaces</li>
+                <li>Coding mini projects</li>
+                <li>Reading design blogs</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>Dislikes</h3>
+              <ul data-testid="test-user-dislikes">
+                <li>Slow internet</li>
+                <li>Unclear project briefs</li>
+                <li>Messy code</li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </section>
+    </article>
+
+    <script src="index.js"></script>
+  </body>
+</html>
