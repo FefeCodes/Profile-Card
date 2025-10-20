@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main data-testid="test-profile-card" class="profile-card">
+      <header class="navbar">
+        <nav>
+          <ul>
+            <li><a href="/profile/index.html">Home</a></li>
+            <li><a href="/about/about.html">About Me</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="main-section-container">
+        <figure class="profile-avatar">
+          <img
+            src="/asset/Oluwaferanmi Aina.jpg"
+            alt="Profile photo of Aina Oluwaferanmi"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <section class="profile">
+          <section class="profile-info">
+            <header>
+              <h2 data-testid="test-user-name">Aina Oluwaferanmi Ayomikun</h2>
+            </header>
+
+            <p class="current-time">
+              Current time (ms):
+              <span data-testid="test-user-time" id="time"></span>
+            </p>
+
+            <p data-testid="test-user-bio" class="">
+              A creative UI/UX designer and frontend enthusiast passionate about
+              building delightful digital experiences. I am excited to expand my
+              skills and contribute to meaningful projects
+            </p>
+          </section>
+
+          <section class="details">
+            <nav data-testid="test-user-social-links" aria-label="Social links">
+              <ul>
+                <li>
+                  <a
+                    href="https://x.com/Flexydotz17"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-twitter"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/FefeCodes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-github"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/oluwaferanmiaina/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-linkedin"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <section class="hobbies-dislikes-container">
+              <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                  <li>Designing</li>
+                  <li>Watching Japanese movies</li>
+                  <li>Listening to Music</li>
+                </ul>
+              </section>
+
+              <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                  <li>Disturbance</li>
+                  <li>Talking for long</li>
+                  <li>Being under pressure</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

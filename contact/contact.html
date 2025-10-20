@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <main class="contact-page">
+      <header class="navbar">
+        <nav>
+          <ul>
+            <li><a href="/profile/index.html">Home</a></li>
+            <li><a href="/about/about.html">About Me</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="form">
+        <h2>Contact Us</h2>
+        <form id="contactForm" novalidate class="form-content">
+          <div class="field-group">
+            <label for="name">Full Name*</label>
+            <input
+              id="name"
+              data-testid="test-contact-name"
+              type="text"
+              required
+              aria-describedby="error-name"
+              placeholder="Enter your full name"
+            />
+            <p
+              id="error-name"
+              data-testid="test-contact-error-name"
+              class="error"
+            ></p>
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email Address*</label>
+            <input
+              id="email"
+              data-testid="test-contact-email"
+              type="email"
+              required
+              aria-describedby="error-email"
+              placeholder="Enter your email address"
+            />
+            <p
+              id="error-email"
+              data-testid="test-contact-error-email"
+              class="error"
+            ></p>
+          </div>
+
+          <div class="field-group">
+            <label for="subject">Subject*</label>
+            <input
+              id="subject"
+              data-testid="test-contact-subject"
+              type="text"
+              required
+              aria-describedby="error-subject"
+              placeholder="What's this about?"
+            />
+            <p
+              id="error-subject"
+              data-testid="test-contact-error-subject"
+              class="error"
+            ></p>
+          </div>
+
+          <div class="field-group">
+            <label for="message">Message*</label>
+            <textarea
+              id="message"
+              data-testid="test-contact-message"
+              required
+              aria-describedby="error-message"
+              placeholder="Tell me more about your message..."
+            ></textarea>
+            <p
+              id="error-message"
+              data-testid="test-contact-error-message"
+              class="error"
+            ></p>
+          </div>
+
+          <button type="submit" data-testid="test-contact-submit">
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      <p id="success" data-testid="test-contact-success" class="success"></p>
+    </main>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
